@@ -1,4 +1,4 @@
-module github.com/sikozonpc/social
+module github.com/kstv364/social-go-monolith
 
 go 1.22.0
 
