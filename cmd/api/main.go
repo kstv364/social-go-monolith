@@ -6,13 +6,13 @@ import (
 	"time"
 
 	"github.com/go-redis/redis/v8"
-	"github.com/sikozonpc/social/internal/auth"
-	"github.com/sikozonpc/social/internal/db"
-	"github.com/sikozonpc/social/internal/env"
-	"github.com/sikozonpc/social/internal/mailer"
-	"github.com/sikozonpc/social/internal/ratelimiter"
-	"github.com/sikozonpc/social/internal/store"
-	"github.com/sikozonpc/social/internal/store/cache"
+	"github.com/kstv364/social-go-monolith/internal/auth"
+	"github.com/kstv364/social-go-monolith/internal/db"
+	"github.com/kstv364/social-go-monolith/internal/env"
+	"github.com/kstv364/social-go-monolith/internal/mailer"
+	"github.com/kstv364/social-go-monolith/internal/ratelimiter"
+	"github.com/kstv364/social-go-monolith/internal/store"
+	"github.com/kstv364/social-go-monolith/internal/store/cache"
 	"go.uber.org/zap"
 )
 

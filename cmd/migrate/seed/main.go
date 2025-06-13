@@ -3,9 +3,9 @@ package main
 import (
 	"log"
 
-	"github.com/sikozonpc/social/internal/db"
-	"github.com/sikozonpc/social/internal/env"
-	"github.com/sikozonpc/social/internal/store"
+	"github.com/kstv364/social-go-monolith/internal/db"
+	"github.com/kstv364/social-go-monolith/internal/env"
+	"github.com/kstv364/social-go-monolith/internal/store"
 )
 
 func main() {

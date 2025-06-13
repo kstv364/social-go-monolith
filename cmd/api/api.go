@@ -16,13 +16,13 @@ import (
 	"github.com/go-chi/cors"
 	"go.uber.org/zap"
 
-	"github.com/sikozonpc/social/docs" // This is required to generate swagger docs
-	"github.com/sikozonpc/social/internal/auth"
-	"github.com/sikozonpc/social/internal/env"
-	"github.com/sikozonpc/social/internal/mailer"
-	"github.com/sikozonpc/social/internal/ratelimiter"
-	"github.com/sikozonpc/social/internal/store"
-	"github.com/sikozonpc/social/internal/store/cache"
+	"github.com/kstv364/social-go-monolith/docs" // This is required to generate swagger docs
+	"github.com/kstv364/social-go-monolith/internal/auth"
+	"github.com/kstv364/social-go-monolith/internal/env"
+	"github.com/kstv364/social-go-monolith/internal/mailer"
+	"github.com/kstv364/social-go-monolith/internal/ratelimiter"
+	"github.com/kstv364/social-go-monolith/internal/store"
+	"github.com/kstv364/social-go-monolith/internal/store/cache"
 	httpSwagger "github.com/swaggo/http-swagger/v2"
 )
 
@@ -108,7 +108,7 @@ func (app *application) mount() http.Handler {
 		AllowCredentials: false,
 		MaxAge:           300, // Maximum value not ignored by any of major browsers
 	}))
-	
+
 	if app.config.rateLimiter.Enabled {
 		r.Use(app.RateLimiterMiddleware)
 	}

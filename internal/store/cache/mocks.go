@@ -3,7 +3,7 @@ package cache
 import (
 	"context"
 
-	"github.com/sikozonpc/social/internal/store"
+	"github.com/kstv364/social-go-monolith/internal/store"
 	"github.com/stretchr/testify/mock"
 )
 

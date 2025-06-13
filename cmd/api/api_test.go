@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/sikozonpc/social/internal/ratelimiter"
+	"github.com/kstv364/social-go-monolith/internal/ratelimiter"
 )
 
 func TestRateLimiterMiddleware(t *testing.T) {

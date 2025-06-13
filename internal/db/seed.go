@@ -8,7 +8,7 @@ import (
 
 	"math/rand"
 
-	"github.com/sikozonpc/social/internal/store"
+	"github.com/kstv364/social-go-monolith/internal/store"
 )
 
 var usernames = []string{
